@@ -130,6 +130,23 @@ label {
         width: 100%; /* 250px risquait de couper ton texte sur mobile */
         text-align: justify;
     }
+
+	/* Cette règle s'applique uniquement aux écrans de moins de 768px (mobiles/tablettes) */
+@media screen and (max-width: 768px) {
+    body {
+      
+        background-attachment: scroll; 
+        
+       
+        background-size: cover;
+        
+        
+        background-position: center center;
+        
+        
+        min-height: 100vh;
+    }
+}
 }
 
 img{
