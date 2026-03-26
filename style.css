@@ -1,0 +1,137 @@
+
+
+@font-face {
+    font-family: 'GODOFWAR';
+    src: url('godofwar/GODOFWAR.TTF');
+}
+
+
+body {
+    background-color: grey;
+    background-image: url('images/midgard.jpg');
+    background-attachment: fixed;
+    margin: 0;
+}
+
+p, h1, h2 {
+    font-family: 'GODOFWAR', sans-serif;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    background-color: black;
+}
+
+a:visited {
+    color: aliceblue;
+}
+
+
+header {
+    padding: 16px 50px;
+}
+
+.krato {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.krato a {
+    color: #DC143C;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.arsenal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+}
+
+.arsenal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.rage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.rage img {
+    width: 500px;
+    height: 300px;
+    max-width: 100%; /* Évite que l'image dépasse sur petit écran */
+}
+
+
+
+
+
+.commentaire {
+    float: right;
+    width: 300px;
+}
+
+.commentaire p {
+    text-align: right;
+    border: 3px double white; /* Correction syntaxe bordure */
+}
+
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th, caption {
+    border: 1px solid white;
+    color: white;
+    font-family: 'GODOFWAR';
+    padding: 10px;
+}
+
+label {
+    font-family: 'GODOFWAR';
+    color: white;
+}
+
+
+@media screen and (max-width: 1200px) {
+    h1{
+        color: black;
+
+    }
+}
+
+@media screen and (max-width: 960px) {
+    p {
+        width: 100%; /* 250px risquait de couper ton texte sur mobile */
+        text-align: justify;
+    }
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
