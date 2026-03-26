@@ -80,7 +80,7 @@ header {
 .rage img {
     width: 500px;
     height: 300px;
-    max-width: 100%; /* Évite que l'image dépasse sur petit écran */
+    max-width: 100%; 
 }
 
 
@@ -94,7 +94,7 @@ header {
 
 .commentaire p {
     text-align: right;
-    border: 3px double white; /* Correction syntaxe bordure */
+    border: 3px double white;
 }
 
 
@@ -127,11 +127,11 @@ label {
 
 @media screen and (max-width: 960px) {
     p {
-        width: 100%; /* 250px risquait de couper ton texte sur mobile */
+        width: 100%; 
         text-align: justify;
     }
-
-	/* Cette règle s'applique uniquement aux écrans de moins de 768px (mobiles/tablettes) */
+}
+	
 @media screen and (max-width: 768px) {
     body {
       
@@ -147,9 +147,18 @@ label {
         min-height: 100vh;
     }
 }
-}
+
 
 img{
 	max-width: 100%;
 	height: auto;
 }
+
+
+html, body {
+    
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
